@@ -36,6 +36,16 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: 'www'
     },
+    ghostMode: {
+    clicks: true,
+    forms: true,
+    scroll: false
+    },
+    open: false,
+    reloadOnRestart: false,
+    notify: false,
+    reloadDelay: 2000,
+    
   })
 })
 
