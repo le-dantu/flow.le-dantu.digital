@@ -50,7 +50,7 @@ gulp.task('browserSync', function() {
 })
 
 gulp.task('watch', ['sass', 'pug', 'media', 'js', 'browserSync'], function (){
-  gulp.watch('src/css/*.sass', ['sass']);
+  gulp.watch('src/css/*.scss', ['sass']);
   gulp.watch('src/pug/**/*.pug', ['pug']);
   gulp.watch('src/js/**/*.js', ['js']);
   gulp.watch('src/res/**/*', ['media']);
